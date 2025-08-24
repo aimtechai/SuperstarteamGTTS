@@ -1,0 +1,115 @@
+.accordion-button {
+  position: relative;
+  display: flex
+;
+  align-items: center;
+  width: 100%;
+  padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+  font-size: 1rem;
+  color: var(--bs-accordion-btn-color);
+  text-align: left;
+  background-color: var(--bs-accordion-btn-bg);
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  transition: var(--bs-accordion-transition);
+  background: #cfe2ff;
+}
+
+.reviews-section .marquee {
+  overflow: hidden;
+  width: 100%;
+}
+
+.reviews-section .marquee-track {
+  display: flex;
+  animation: marqueeScroll 60s linear infinite; /* slow, loops forever */
+  will-change: transform;
+}
+
+.reviews-section .marquee-seq {
+  display: flex;
+  gap: 16px;
+  padding: 8px 0;
+}
+
+/* Card shows 3-up on large screens */
+.reviews-section .review-card {
+  flex: 0 0 calc(33.333% - 10.666px); /* 3 across minus a bit for the gap */
+  max-width: calc(33.333% - 10.666px);
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #fff;
+  border-radius: 14px;
+  padding: 16px;
+  backdrop-filter: blur(2px);
+}
+
+/* Typography */
+.reviews-section .review-quote {
+  font-weight: 600;
+  line-height: 1.4;
+}
+.reviews-section .review-name {
+  margin-top: 8px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+.reviews-section .review-stars {
+  margin-top: 6px;
+}
+
+/* Responsive: 2-up on md, 1-up on xs */
+@media (max-width: 991.98px) {
+  .reviews-section .review-card {
+    flex-basis: calc(50% - 8px);
+    max-width: calc(50% - 8px);
+  }
+}
+@media (max-width: 575.98px) {
+  .reviews-section .review-card {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Infinite seamless scroll: translate by exactly one sequence width (50%) */
+@keyframes marqueeScroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* === Overrides === */
+.reviews-section .review-card {
+  /* fixed card width so the marquee feels consistent */
+  flex: 0 0 250px;
+  width: 250px;
+  max-width: 250px;
+}
+
+/* faster marquee (was 60s) */
+.reviews-section .marquee-track {
+  animation: marqueeScroll 40s linear infinite;
+}
+
+/* optional: slightly tighter gaps for more cards onscreen */
+.reviews-section .marquee-seq {
+  gap: 30px;
+}
+
+/* If you kept the earlier responsive rules that set 33.33%/50% widths,
+   these overrides will replace them due to being later in the file. */
+
+
+.site-footer li a,
+.site-footer .footer-link {
+  color: #004985 !important;
+  text-decoration: none !important;
+}
+.site-footer li a:hover,
+.site-footer li a:focus,
+.site-footer .footer-link:hover,
+.site-footer .footer-link:focus {
+  color: #004985 !important;
+  text-decoration: none !important;
+}

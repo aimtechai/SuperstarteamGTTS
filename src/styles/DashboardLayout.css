@@ -1,0 +1,193 @@
+.header {
+  /* background-color: #e9ecef; */
+}
+
+.main-content {
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: #F7F9FB2E;
+  backdrop-filter: blur(4px);
+  box-shadow: 0px 4px 4px 0px #00000040;
+  min-height: 110vh;
+  min-width: 285px;
+  position: relative;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.progress-ring {
+  position: relative;
+  transform: rotate(-90deg);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 20px; /* push below profile */
+}
+
+.menu-item {
+  padding: 5px 15px;
+  border: 0.3px solid #004985;
+  border-radius: 8px;
+  color: #004985;
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.menu-item:hover {
+  background: #e7f4ff88;
+}
+
+.menu-item.active {
+  background: #E7F4FF;
+}
+
+
+.stat-card {
+  text-align: center;
+  background: #edf7ff;
+  padding: 10px;
+  border-radius: 10px;
+  color: #004985;
+
+  /* Equal-height helpers */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.stat-card {
+  text-align: center;
+  background: #edf7ff;
+  padding: 10px;
+  border-radius: 10px;
+  color: #004985;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.title-card {
+  border: 1px solid #004985;
+  border-radius: 10px;
+  padding: 10px 12px;
+  color: #004985;
+}
+
+.progress-wrap {
+  background-color: #e7f4ff;
+  border-radius: 10px;
+  height: 15px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background: #79c3ff;
+  height: 15px;
+  border-radius: 10px;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.legend-dot.complete { background-color: #79c3ff; }
+.legend-dot.incomplete { background-color: #e7f4ff; }
+
+/* Clean nav links (no bg/border) */
+.nav-link.nav-clean {
+  color: #004985;
+  font-weight: 600;
+}
+.nav-link.nav-clean:hover,
+.nav-link.nav-clean:focus {
+  color: #072e60;
+  text-decoration: none;
+}
+
+/* Reusable card style (matches dashboard theme) */
+.title-card {
+  border: 1px solid #004985;
+  border-radius: 10px;
+  padding: 12px 14px;
+  background: #fff;
+  color: #004985;
+}
+
+/* Equal height helper for cards placed inside d-flex columns */
+.equal-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Progress bar */
+.progress-wrap {
+  background-color: #e7f4ff;
+  border-radius: 10px;
+  height: 15px;
+  overflow: hidden;
+}
+.progress-fill {
+  background: #79c3ff;
+  height: 15px;
+  border-radius: 10px;
+}
+
+/* Legend dots */
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+}
+.legend-dot.complete { background-color: #79c3ff; }
+.legend-dot.incomplete { background-color: #e7f4ff; }
+
+/* Avatar ring (simple conic style) */
+.avatar-ring {
+  position: relative;
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(closest-side, white 79%, transparent 80% 100%),
+    conic-gradient(#79c3ff 0 70%, #e7f4ff 0 100%);
+}
+.avatar-inner {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #04b8fc;
+  display: grid;
+  place-items: center;
+}
+.avatar-text {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+}

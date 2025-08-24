@@ -1,0 +1,8 @@
+/* Inputs + button more compact */
+input.border, button.border, textarea.border{
+  border: 1px solid #154393 !important;
+  /* border-radius: 10px;
+  height: 44px;            
+  padding: 10px 14px;
+  font-size: 14.5px; */
+}

@@ -1,0 +1,25 @@
+/dashboard (OK)
+/landing
+/A0001
+/A0002
+/A0003
+/A0004
+/A0005
+/login (OK)
+/pre-login (OK)
+/signup (OK)
+/course-enrollment/select-state
+/course-enrollment/select-upgrade/:stateName (OK)
+/student-enrollment (OK)
+/student-enrollment/order-summary (OK)
+/student-enrollment/payment (OK)
+/profile (OK)
+/support (OK) 
+/referral (OK)
+/upgrades (OK)
+/upload (OK)
+/lesson (OK)
+/lesson/:Id (OK)
+*
+
+
