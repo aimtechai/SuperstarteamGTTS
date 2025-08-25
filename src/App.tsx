@@ -34,6 +34,7 @@ import A0002 from "./pages/A0002";
 import A0003 from "./pages/A0003";
 import A0004 from "./pages/A0004";
 import A0005 from "./pages/A0005";
+import A0006 from "./pages/A0006";
 
 const queryClient = new QueryClient();
 
@@ -54,6 +55,7 @@ const App = () => {
               <Route path="/A0003" element={<A0003 />} />
               <Route path="/A0004" element={<A0004 />} />
               <Route path="/A0005" element={<A0005 />} />
+              <Route path="/A0006" element={<A0006 />} />
             </Route>
             
             {/* Auth routes with AuthLayout */}

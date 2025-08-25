@@ -11,6 +11,7 @@ import section5Image from "@/assets/section5Image.png";
 import section7Image1 from "@/assets/section7image-1.jpg";
 import section7Image2 from "@/assets/section7Image-2.jpg";
 import section8Image from "@/assets/section8Image.jpg";
+import { SiTiktok, SiInstagram, SiX, SiYoutube, SiFacebook, SiLinkedin } from "react-icons/si";
 
 
 const STATES = [
@@ -2366,22 +2367,54 @@ export default function LandingPage() {
             {/* Right Column: Social Icons */}
             <Col xs={12} lg={3} className="text-center text-lg-start">
               <ul className="list-unstyled m-0" style={{ lineHeight: 2 }}>
-                <li><a href="/" style={{ color: "#004985", textDecoration: "none" }}>Tiktok</a></li>
-                <li><a href="/" style={{ color: "#004985", textDecoration: "none" }}>Instagram</a></li>
-                <li><a href="/" style={{ color: "#004985", textDecoration: "none" }}>Twitter</a></li>
-                <li><a href="/" style={{ color: "#004985", textDecoration: "none" }}>Youtube</a></li>
-                <li><a href="/" style={{ color: "#004985", textDecoration: "none" }}>Facebook</a></li>
-                <li><a href="/" style={{ color: "#004985", textDecoration: "none" }}>LinkedIn</a></li>
+                <li>
+                  <a href="/" className="d-inline-flex align-items-center gap-2" style={{ color: "#004985", textDecoration: "none" }}>
+                    <SiTiktok size={18} />
+                    <span>Tiktok</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="d-inline-flex align-items-center gap-2" style={{ color: "#004985", textDecoration: "none" }}>
+                    <SiInstagram size={18} />
+                    <span>Instagram</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="d-inline-flex align-items-center gap-2" style={{ color: "#004985", textDecoration: "none" }}>
+                    <SiX size={18} />
+                    <span>Twitter</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="d-inline-flex align-items-center gap-2" style={{ color: "#004985", textDecoration: "none" }}>
+                    <SiYoutube size={18} />
+                    <span>Youtube</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="d-inline-flex align-items-center gap-2" style={{ color: "#004985", textDecoration: "none" }}>
+                    <SiFacebook size={18} />
+                    <span>Facebook</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="d-inline-flex align-items-center gap-2" style={{ color: "#004985", textDecoration: "none" }}>
+                    <SiLinkedin size={18} />
+                    <span>LinkedIn</span>
+                  </a>
+                </li>
               </ul>
             </Col>
+
           </Row>
         </Container>
 
         {/* Bottom Bar */}
         <div style={{ background: "#fff" }}>
           <Container className="py-3">
-            <div className="text-center" style={{ color: "#555", fontSize: 14 }}>
-              © {new Date().getFullYear()} GoToTrafficSchool
+            <div className="text-center" style={{ color: "#555", fontSize: 18 }}>
+              {/* © {new Date().getFullYear()} GoToTrafficSchool */}
+              © Copyright 2005-2025 CyberActive
             </div>
           </Container>
         </div>

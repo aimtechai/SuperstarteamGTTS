@@ -5,7 +5,7 @@
 import ExternalLayout from "../layouts/ExternalLayout";
 import { Container, Row, Col, Accordion } from "react-bootstrap";
 import "../styles/LandingPage.css";
-
+import { SiTiktok, SiInstagram, SiX, SiYoutube, SiFacebook, SiLinkedin } from "react-icons/si";
 // You can swap these with real assets later
 
 
@@ -103,13 +103,21 @@ export default function A0001() {
 
       {/* 3 EASY STEPS BAR */}
       <div style={{ background: "#0B4D8A", color: "#fff", fontWeight: 700 }}>
-        <Container className="py-2 d-flex flex-wrap align-items-center gap-3">
-          <div className="me-2">3 EASY STEPS!</div>
-          <div className="d-flex align-items-center gap-3">
+        <Container className="py-2 d-flex flex-column flex-md-row align-items-center gap-3 gap-md-6">
+          <div className="me-md-2 text-center" style={{ fontSize: "18px" }}>3 EASY STEPS!</div>
+          <div className="d-flex flex-column flex-sm-row align-items-center gap-3 gap-sm-4 gap-md-6">
             <StepBadge n={1} text="SIGN UP" />
-            <i className="bi bi-arrow-right" />
+            <div className="d-none d-sm-block">
+              <svg width="32" height="12" viewBox="0 0 43 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.5 7H0.5V9H1.5V8V7ZM42.2071 8.70711C42.5976 8.31658 42.5976 7.68342 42.2071 7.29289L35.8431 0.928932C35.4526 0.538408 34.8195 0.538408 34.4289 0.928932C34.0384 1.31946 34.0384 1.95262 34.4289 2.34315L40.0858 8L34.4289 13.6569C34.0384 14.0474 34.0384 14.6805 34.4289 15.0711C34.8195 15.4616 35.4526 15.4616 35.8431 15.0711L42.2071 8.70711ZM1.5 8V9H41.5V8V7H1.5V8Z" fill="white"/>
+              </svg>
+            </div>
             <StepBadge n={2} text="COMPLETE THE COURSE ONLINE" />
-            <i className="bi bi-arrow-right" />
+            <div className="d-none d-sm-block">
+              <svg width="32" height="12" viewBox="0 0 43 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.5 7H0.5V9H1.5V8V7ZM42.2071 8.70711C42.5976 8.31658 42.5976 7.68342 42.2071 7.29289L35.8431 0.928932C35.4526 0.538408 34.8195 0.538408 34.4289 0.928932C34.0384 1.31946 34.0384 1.95262 34.4289 2.34315L40.0858 8L34.4289 13.6569C34.0384 14.0474 34.0384 14.6805 34.4289 15.0711C34.8195 15.4616 35.4526 15.4616 35.8431 15.0711L42.2071 8.70711ZM1.5 8V9H41.5V8V7H1.5V8Z" fill="white"/>
+              </svg>
+            </div>
             <StepBadge n={3} text="GET YOUR CERTIFICATE" />
           </div>
         </Container>
@@ -134,7 +142,7 @@ export default function A0001() {
                     <Accordion.Header>
                       <span style={{ color: "#004985", fontWeight: 700 }}>{item.h}</span>
                     </Accordion.Header>
-                    <Accordion.Body className="small" style={{ color: "#004985" }}>
+                    <Accordion.Body style={{ color: "#004985", fontSize: "18px" }}>
                       {item.b}
                     </Accordion.Body>
                   </Accordion.Item>
@@ -144,29 +152,29 @@ export default function A0001() {
 
             {/* RIGHT: Copy */}
             <Col lg={8} xl={9}>
-              <h1 style={{ color: "#004985", fontWeight: 800, marginBottom: 16, fontSize: "40px" }}>
+              <h1 style={{ color: "#004985", fontWeight: 800, marginBottom: 16, fontSize: "clamp(28px, 5vw, 40px)" }}>
                 Welcome to GoToTrafficSchool.Com
               </h1>
 
-              <p className="text-lg" style={{ color: "#004985", marginBottom: 16, }}>
+              <p style={{ color: "#004985", marginBottom: 16, fontSize: "18px", lineHeight: 1.6 }}>
                 Welcome to GoToTrafficSchool.com, one of the Internet&apos;s most popular online traffic school course. We
                 provide licensed online traffic school programs for insurance reduction, safe driver points, mature drivers and
                 fleet driver safety programs.
               </p>
 
-              <p className="text-lg" style={{ color: "#004985", marginBottom: 16, }}>
+              <p style={{ color: "#004985", marginBottom: 16, fontSize: "18px", lineHeight: 1.6 }}>
                 This online traffic school program is best suited for those who have received a traffic ticket and would like to
                 take online traffic school so that the traffic does not appear on their record, those who would like to lower
                 their insurance premiums, and those who need to take a driver safety course for their work.
               </p>
 
-              <p style={{ color: "#004985", marginBottom: 16, }}>
+              <p style={{ color: "#004985", marginBottom: 16, fontSize: "18px", lineHeight: 1.6 }}>
                 GoToTrafficSchool is one of the best and most convenient way to attend online traffic school on the Internet.
                 Unlike other Internet courses you do not have to struggle to get through this course. Our courses are also the
                 lowest priced online traffic school courses in the industry. <strong>Guaranteed.</strong>
               </p>
 
-              <p style={{ color: "#004985", marginBottom: 16, }}>
+              <p style={{ color: "#004985", marginBottom: 16, fontSize: "18px", lineHeight: 1.6 }}>
                 The course is easy to read and follow. You do not need to own various types of computer software to take this
                 course. Our course is 100% interactive. Anybody who has a computer with internet access can take this course
                 from the comfort of home.
@@ -174,7 +182,7 @@ export default function A0001() {
 
               <button
                 className="btn btn-danger mt-2"
-                style={{ borderRadius: 20, padding: "10px 20px", fontWeight: 700 }}
+                style={{ borderRadius: 20, padding: "12px 24px", fontWeight: 700, fontSize: "18px" }}
               >
                 Register Now
               </button>
@@ -183,85 +191,134 @@ export default function A0001() {
         </Container>
       </main>
 
-      {/* FOOTER */}
-      <footer style={{ background: "#F4F9FF", borderTop: "1px solid #E6EFF7" }}>
-        <Container className="py-4">
-          {/* <Row className="g-4 align-items-center">
-            <Col md={4} className="d-flex align-items-center gap-3">
-              <Logo />
-            </Col>
-            <Col md={8} className="text-md-end">
-              <div className="d-inline-flex align-items-center gap-3">
-                <a href="#tiktok" className="text-decoration-none" style={{ color: "#004985" }}>
-                  <i className="bi bi-tiktok" /> Tiktok
-                </a>
-                <a href="#instagram" className="text-decoration-none" style={{ color: "#004985" }}>
-                  <i className="bi bi-instagram" /> Instagram
-                </a>
-                <a href="#twitter" className="text-decoration-none" style={{ color: "#004985" }}>
-                  <i className="bi bi-twitter-x" /> Twitter
-                </a>
-                <a href="#youtube" className="text-decoration-none" style={{ color: "#004985" }}>
-                  <i className="bi bi-youtube" /> Youtube
-                </a>
-                <a href="#facebook" className="text-decoration-none" style={{ color: "#004985" }}>
-                  <i className="bi bi-facebook" /> Facebook
-                </a>
-                <a href="#linkedin" className="text-decoration-none" style={{ color: "#004985" }}>
-                  <i className="bi bi-linkedin" /> LinkedIn
-                </a>
+      {/* Footer */}
+      <footer style={{ background: "#E7F4FF" }}>
+        <Container className="py-5 px-3 px-md-5">
+          <Row className="align-items-start g-4">
+            {/* Left Column: Logo + Phone + Buttons */}
+            <Col xs={12} lg={4} className="text-center text-lg-start">
+              <div className="mb-3">
+                <img
+                  src="/src/assets/logo.png"
+                  alt="Go To Traffic School"
+                  style={{ maxHeight: 80 }}
+                />
               </div>
-            </Col>
-          </Row> */}
-
-          <Row className="mt-4 g-4">
-            <Col sm={6} md={3} className="text-sm-start">
-              <Logo />  
-              {/* <div className="small" style={{ color: "#004985", fontWeight: 600 }}>
-                1-(888)-329-7069
-              </div> */}
-              <div className="mt-2">
-                <a href="#partner" className="btn btn-outline-primary btn-sm me-2" style={{ borderRadius: 999, borderWidth: 2, fontWeight: 600, borderColor: "#004985", color: "#004985" }}>
+              <div
+                style={{
+                  color: "#004985",
+                  fontWeight: 700,
+                  fontSize: "18px",
+                  marginBottom: "1rem",
+                }}
+              >
+              </div>
+              <div className="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+                <button
+                  style={{
+                    border: "1.5px solid #004985",
+                    background: "transparent",
+                    borderRadius: 30,
+                    padding: "8px 24px",
+                    color: "#004985",
+                    fontWeight: 600,
+                  }}
+                >
                   Partner with Us
-                </a>
-                <a href="#refer" className="btn btn-outline-primary btn-sm" style={{ borderRadius: 999, borderWidth: 2, fontWeight: 600, borderColor: "#004985", color: "#004985" }}>
+                </button>
+                <button
+                  style={{
+                    border: "1.5px solid #004985",
+                    background: "transparent",
+                    borderRadius: 30,
+                    padding: "8px 24px",
+                    color: "#004985",
+                    fontWeight: 600,
+                  }}
+                >
                   Refer a Friend
-                </a>
+                </button>
               </div>
             </Col>
-            <Col sm={6} md={3}>
-              <ul className="list-unstyled m-0">
-                <FooterLink href="#">Home</FooterLink>
-                <FooterLink href="#">Traffic School Registration</FooterLink>
-                <FooterLink href="#">Log In</FooterLink>
-                <FooterLink href="#">About The Company</FooterLink>
-                <FooterLink href="#">Course Info</FooterLink>
-              </ul>
-            </Col>
-            <Col sm={6} md={3}>
-              <ul className="list-unstyled m-0">
-                <FooterLink href="#">Affiliate Program</FooterLink>
-                <FooterLink href="#">Contact Us</FooterLink>
-                <FooterLink href="#">Certificate Delivery</FooterLink>
-                <FooterLink href="#">Site Map</FooterLink>
-                <FooterLink href="#">Program Guarantee</FooterLink>
-              </ul>
-            </Col>
-            <Col sm={6} md={3}>
-              <ul className="list-unstyled m-0">
-                <FooterLink href="#">Student Comments</FooterLink>
-                <FooterLink href="#">Court Directory</FooterLink>
-                <FooterLink href="#">Articles</FooterLink>
-                <FooterLink href="#">Privacy Policy</FooterLink>
-                <FooterLink href="#">Terms of Use</FooterLink>
-              </ul>
-            </Col>
-          </Row>
 
-          <div className="text-center small mt-4" style={{ color: "#7A95B2" }}>
-            © Copyright 2005-{new Date().getFullYear()} CyberActive
-          </div>
+            {/* Middle Column: Navigation */}
+            <Col xs={12} lg={5}>
+              <Row className="g-4 text-center text-lg-start">
+                {/* <Col xs={6}>
+                  <ul className="list-unstyled m-0" style={{ lineHeight: 2 }}>
+                    <li><a href="/" style={{ color: "#004985", textDecoration: "none" }}>Driving</a></li>
+                    <li><a href="/" style={{ color: "#004985", textDecoration: "none" }}>Home</a></li>
+                  </ul>
+                </Col> */}
+                <Col xs={12}>
+                  <ul className="list-unstyled m-0" style={{ lineHeight: 2 }}>
+                    <li><a href="/" style={{ color: "#004985", textDecoration: "none" }}>Driving</a></li>
+                    <li><a href="/" style={{ color: "#004985", textDecoration: "none" }}>Home</a></li>
+                    <li><a href="/" style={{ color: "#004985", textDecoration: "none" }}>Careers</a></li>
+                    <li><a href="/" style={{ color: "#004985", textDecoration: "none" }}>Partnership</a></li>
+                    <li><a href="/" style={{ color: "#004985", textDecoration: "none" }}>Help Center</a></li>
+                    <li><a href="/" style={{ color: "#004985", textDecoration: "none" }}>Contact</a></li>
+                    <li><a href="/" style={{ color: "#004985", textDecoration: "none" }}>Our Blog</a></li>
+                    <li><a href="/" style={{ color: "#004985", textDecoration: "none" }}>Accessibility Statement</a></li>
+                  </ul>
+                </Col>
+              </Row>
+            </Col>
+
+            {/* Right Column: Social Icons */}
+            <Col xs={12} lg={3} className="text-center text-lg-start">
+              <ul className="list-unstyled m-0" style={{ lineHeight: 2 }}>
+                <li>
+                  <a href="/" className="d-inline-flex align-items-center gap-2" style={{ color: "#004985", textDecoration: "none" }}>
+                    <SiTiktok size={18} />
+                    <span>Tiktok</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="d-inline-flex align-items-center gap-2" style={{ color: "#004985", textDecoration: "none" }}>
+                    <SiInstagram size={18} />
+                    <span>Instagram</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="d-inline-flex align-items-center gap-2" style={{ color: "#004985", textDecoration: "none" }}>
+                    <SiX size={18} />
+                    <span>Twitter</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="d-inline-flex align-items-center gap-2" style={{ color: "#004985", textDecoration: "none" }}>
+                    <SiYoutube size={18} />
+                    <span>Youtube</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="d-inline-flex align-items-center gap-2" style={{ color: "#004985", textDecoration: "none" }}>
+                    <SiFacebook size={18} />
+                    <span>Facebook</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="d-inline-flex align-items-center gap-2" style={{ color: "#004985", textDecoration: "none" }}>
+                    <SiLinkedin size={18} />
+                    <span>LinkedIn</span>
+                  </a>
+                </li>
+              </ul>
+            </Col>
+
+          </Row>
         </Container>
+
+        {/* Bottom Bar */}
+        <div style={{ background: "#fff" }}>
+          <Container className="py-3">
+            <div className="text-center" style={{ color: "#555", fontSize: 18 }}>
+              {/* © {new Date().getFullYear()} GoToTrafficSchool */}
+              © Copyright 2005-2025 CyberActive
+            </div>
+          </Container>
+        </div>
       </footer>
     </ExternalLayout>
   );
@@ -288,7 +345,8 @@ function StepBadge({ n, text }) {
       >
         {n}
       </div>
-      <div className="text-uppercase" style={{ fontWeight: 800 }}>{text}</div>
+      <div className="text-uppercase d-none d-sm-block" style={{ fontWeight: 800, fontSize: "14px" }}>{text}</div>
+      <div className="text-uppercase d-block d-sm-none text-center" style={{ fontWeight: 800, fontSize: "12px", marginTop: "4px" }}>{text}</div>
     </div>
   );
 }

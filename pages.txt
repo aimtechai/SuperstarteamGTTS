@@ -1,10 +1,11 @@
 /dashboard (OK)
-/landing
-/A0001
-/A0002
-/A0003
-/A0004
-/A0005
+/landing (OK)
+/A0001 (OK)
+/A0002 (OK)
+/A0003 (OK)
+/A0004 (OK)
+/A0005 (OK)
+/A0006 (OK)
 /login (OK)
 /pre-login (OK)
 /signup (OK)
